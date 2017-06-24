@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <TextView android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateText"
+        android:layout_above="@+id/currentValue"/>
+
+    <TextView android:id="@+id/currentValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="20pt"
+        android:paddingTop="20dp"
+        android:text="@string/currentAmount"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/inputExpenseText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_cost"
+        android:onClick="addCost"
+        android:id="@+id/button" />
+
+    <TextView android:id="@+id/inputExpense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20pt"
+        android:paddingTop="20dp"
+        android:text="@string/inputExpense"
+        android:layout_below="@+id/updateButton"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView android:id="@+id/currentValueAdjust"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20pt"
+        android:paddingTop="20dp"
+        android:text="@string/currentValueAdjust"
+        android:layout_below="@+id/currentValue"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/inputExpenseText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="20pt"
+        android:hint="@string/inputExpenseEdit"
+        android:layout_below="@+id/inputExpense"
+        android:layout_alignParentStart="true" />
+
+    <Button android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updateButton"
+        android:onClick="update"
+        android:layout_below="@+id/currentValueAdjust"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:text="Configure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="configure"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/dateText"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="@string/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reset"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button3" />
+
+    <Button
+        android:text="@string/Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button"
+        android:id="@+id/button4" />
+
+</RelativeLayout>

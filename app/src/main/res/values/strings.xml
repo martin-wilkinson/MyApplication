@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Daily Budget Tracker</string>
+    <string name="currentAmount">Current Amount: </string>
+    <string name="currentValueAdjust"> </string>
+    <string name="inputExpense">Enter Cost: </string>
+    <string name="inputExpenseEdit">$0.00 </string>
+    <string name="button_cost">add</string>
+    <string name="updateButton">update</string>
+    <string name="dateText"> </string>
+    <string name="editText">Enter Daily Budget here: </string>
+    <string name="startButton">Start Saving </string>
+    <string name="noUpdate">No days have gone by since last update</string>
+    <string name="resetButton">Reset </string>
+    <string name="Test">Test</string>
+    <string name="Configure">Configure</string>
+    <string name="set_daily_budget">Enter Your Daily Spending Limit</string>
+
+</resources>
